@@ -1,0 +1,13 @@
+*.{
+    padding:0px;
+    margin:0px;
+}
+
+.navbar{
+    display: flex;
+    height:180px;
+    font-size: 20px;
+    background-color: blueviolet;
+    
+    
+}
