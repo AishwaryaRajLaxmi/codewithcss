@@ -1,13 +1,117 @@
-*.{
+*{
     padding:0px;
     margin:0px;
 }
 
-.navbar{
+:root{
+    --colr:rgb(249, 120, 15);
+    --bg-color:rgb(158, 113, 158);
+
+
+
+}
+
+.nav-bar{
     display: flex;
-    height:180px;
+    height:80px;
     font-size: 20px;
-    background-color: blueviolet;
+    background-color: var(--bg-color);
+    /*For vertically center*/
+     align-items:center;
+     padding:0 100px;
+     justify-content: space-between;
+  }
+
     
+    .nav-bar .brand{
+        font-weight: 500;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color:var(--colr);
+}
+
+.nav-bar .nav-list{
+    display:flex;
+    justify-content: space-between;
+    gap:60px;
+    list-style: none;
+    align-items: center;
     
+}
+
+
+.nav-list .nav-link:link
+{
+    text-decoration:none;
+    transition: all 0.3s;
+    color:var(--colr);
+    font-family: arial;
+}
+
+.nav-list .nav-link:hover{
+    color:red;
+}
+
+.card-container{
+    background-color: rgb(169, 177, 177);
+    display:flex;
+       padding:0px 50px;
+       overflow: hidden;
+       gap:50px;
+}
+
+.card-container .card{
+    flex-basis: 50%;
+    height:310px;
+    width:100%;
+    background-color: grey;
+    border-radius: 3px;
+    overflow: hidden;
+
+}
+
+.card-img img{
+    height:310px;
+    width:100%;
+    
+}
+
+.card-header .card-body {
+    text-align: justify;
+    padding:3px 10px;
+}
+
+.card-header{
+    margin-top:100px;
+}
+
+.card-body p{
+    margin-bottom:20px;
+    padding-top:20px;
+    padding-left:10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+.footer{
+
+    padding:1px 30px 100px 225px;
+}
+
+
+.footer .btn{
+    border:hidden;
+    padding:10px 20px;
+    background-color:var(--bg-color);
+    border-radius: 10px;
+    cursor:pointer;
+    transition: all 0.3s;
+    color:var(--colr); 
+
+ }
+
+.footer .btn:hover{
+    color:white;
+    background-color:deeppink;
 }
